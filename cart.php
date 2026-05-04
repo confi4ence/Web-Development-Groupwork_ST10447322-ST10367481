@@ -1,7 +1,7 @@
 <?php
-// ===================================================
-// cart.php — View cart contents (session-based)
-// ===================================================
+
+// cart.php - View cart contents (session-based)
+
 session_start();
 require_once 'includes/functions.php';
 
