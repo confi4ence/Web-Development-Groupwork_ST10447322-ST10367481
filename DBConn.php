@@ -1,7 +1,7 @@
 <?php
-// ===================================================
+
 // DBConn.php — Database connection for ClothingStore
-// ===================================================
+
 $conn = new mysqli("localhost", "root", "", "ClothingStore");
 
 if ($conn->connect_error) {
