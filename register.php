@@ -1,7 +1,6 @@
 <?php
-// ===================================================
-// register.php — New user registration
-// ===================================================
+
+// register.php - New user registration
 session_start();
 require_once 'DBConn.php';
 require_once 'includes/functions.php';
