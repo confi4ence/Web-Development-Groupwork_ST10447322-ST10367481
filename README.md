@@ -1,9 +1,9 @@
-# 👗 Pasttime Clothing Store
+#  Pasttime Clothing Store
 
 A second-hand clothing marketplace built with PHP, MySQL, HTML, CSS and JavaScript as part of a Web Development group assignment.
 
 
-## 🚀 Getting Started
+##  Getting Started
 
 **Requirements:** XAMPP and a web browser.
 
@@ -21,23 +21,23 @@ http://localhost/pastimes/index.php
 
 ---
 
-## 🔑 Login Credentials
+##  Login Credentials
 
 **Admin**
 - Username: `admin`
 - Email: `admin@pasttime.co.za`
 - Password: `admin123`
 
-**Sample Users** — all use password `password123`
-- `johndoe` — john@example.com
-- `janesmith` — jane@example.com
-- `mikebrown` — mike@example.com
-- `sarahlee` — sarah@example.com
-- `tomwilson` — tom@example.com
+**Sample Users** - all use password `password123`
+- `johndoe` - john@example.com
+- `janesmith` - jane@example.com
+- `mikebrown` - mike@example.com
+- `sarahlee` - sarah@example.com
+- `tomwilson` - tom@example.com
 
 ---
 
-## ✨ Features
+##  Features
 
 - User registration with admin approval flow
 - Secure password hashing with `password_hash()` and `password_verify()`
@@ -50,16 +50,16 @@ http://localhost/pastimes/index.php
 
 ---
 
-## 🗄️ Database Tables
+##  Database Tables
 
-- `tblAdmin` — admin accounts
-- `tblUser` — registered buyers and sellers
-- `tblClothes` — clothing items for sale
-- `tblAorder` — customer orders
+- `tblAdmin` - admin accounts
+- `tblUser` - registered buyers and sellers
+- `tblClothes` - clothing items for sale
+- `tblAorder` - customer orders
 
 ---
 
-## 🛠️ Built With
+##  Built With
 
 PHP · MySQL · HTML5 · CSS3 · JavaScript · XAMPP
 
