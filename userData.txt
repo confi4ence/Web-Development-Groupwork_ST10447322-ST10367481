@@ -1,0 +1,9 @@
+John Doe,john@example.com,johndoe,password123,buyer
+Jane Smith,jane@example.com,janesmith,password123,buyer
+Mike Brown,mike@example.com,mikebrown,password123,seller
+Sarah Lee,sarah@example.com,sarahlee,password123,buyer
+Tom Wilson,tom@example.com,tomwilson,password123,seller
+
+
+--Admin log in
+Username:admin, Email:admin@pasttime.co.za, Password:admin123
