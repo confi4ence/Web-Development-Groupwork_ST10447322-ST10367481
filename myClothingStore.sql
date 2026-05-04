@@ -24,11 +24,7 @@ CREATE TABLE tblAdmin (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Admin record — use setup.php to insert with a real hash, or generate one:
--- echo password_hash('admin123', PASSWORD_DEFAULT);
--- NOTE: Run this PHP snippet to get the hash for your own setup:
--- echo password_hash('admin123', PASSWORD_DEFAULT);
--- The hash below is a placeholder — replace with your generated hash.
+
 INSERT INTO tblAdmin (full_name, email, username, password) VALUES
 ('Super Admin', 'admin@pasttime.co.za', 'admin', '$2y$10$exampleHashReplaceWithRealHash1234567890AbCdEfGhIj');
 
