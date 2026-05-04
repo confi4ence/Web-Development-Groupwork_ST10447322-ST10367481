@@ -1,7 +1,7 @@
 <?php
-// ===================================================
+
 // createTable.php — Recreate tblUser from userData.txt
-// ===================================================
+
 require_once 'DBConn.php';
 
 $messages = [];
