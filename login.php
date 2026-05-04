@@ -1,7 +1,7 @@
 <?php
-// ===================================================
+
 // login.php — User login
-// ===================================================
+
 session_start();
 require_once 'DBConn.php';
 require_once 'includes/functions.php';
