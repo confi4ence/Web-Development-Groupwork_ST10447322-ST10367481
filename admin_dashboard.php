@@ -1,7 +1,7 @@
 <?php
-// ===================================================
-// admin_dashboard.php — Admin: approve users + CRUD
-// ===================================================
+
+// admin_dashboard.php - Admin: approve users + CRUD
+
 session_start();
 require_once 'DBConn.php';
 require_once 'includes/functions.php';
@@ -135,7 +135,7 @@ $admin_name = htmlspecialchars($_SESSION['admin_full_name']);
         </div>
     </div>
 
-    <!-- ===== Section A: Pending Users ===== -->
+    <!-- Section A: Pending Users  -->
     <div class="section-head">
         <h2>Pending Approvals</h2>
         <?php if ($pending_count > 0): ?>
@@ -183,7 +183,7 @@ $admin_name = htmlspecialchars($_SESSION['admin_full_name']);
         </div>
     <?php endif; ?>
 
-    <!-- ===== Section B: Add / Edit User Form ===== -->
+    <!-- Section B: Add / Edit User Form-->
     <div class="section-head">
         <h2><?php echo $edit_user ? 'Edit User' : 'Add New User'; ?></h2>
         <?php if ($edit_user): ?>
@@ -245,7 +245,7 @@ $admin_name = htmlspecialchars($_SESSION['admin_full_name']);
         </form>
     </div>
 
-    <!-- ===== Section C: All Users CRUD Table ===== -->
+    <!--  Section C: All Users CRUD Table  -->
     <div class="section-head">
         <h2>All Users</h2>
     </div>
