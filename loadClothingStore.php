@@ -1,7 +1,7 @@
 <?php
-// ===================================================
-// loadClothingStore.php — Full DB rebuild from SQL file
-// ===================================================
+
+// loadClothingStore.php - Full DB rebuild from SQL file
+
 require_once 'DBConn.php';
 
 $messages = [];
