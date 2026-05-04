@@ -1,7 +1,7 @@
 <?php
-// ===================================================
+
 // index.php — Pasttime landing page
-// ===================================================
+
 session_start();
 require_once 'includes/functions.php';
 ?>
