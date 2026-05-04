@@ -1,7 +1,6 @@
 <?php
-// ===================================================
-// user_dashboard.php — User dashboard
-// ===================================================
+
+// user_dashboard.php - User dashboard
 session_start();
 require_once 'DBConn.php';
 require_once 'includes/functions.php';
