@@ -1,11 +1,7 @@
 <?php
-// ===================================================
-// setup.php — ONE-CLICK full database setup
-// Run this FIRST before anything else.
-// Creates all 4 tables, inserts admin + users + clothes
-// ===================================================
 
-// Connect without selecting a database first so we can CREATE it
+// setup.php - ONE-CLICK full database setup
+// Creates all 4 tables, inserts admin + users + clothes
 $conn = new mysqli("localhost", "root", "", "");
 if ($conn->connect_error) {
     die("<b>Connection failed:</b> " . $conn->connect_error);
