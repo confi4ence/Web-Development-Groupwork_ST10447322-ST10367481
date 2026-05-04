@@ -1,8 +1,6 @@
--- ===================================================
+
 -- myClothingStore.sql
 -- Full schema + sample data for Pasttime ClothingStore
--- ===================================================
-
 CREATE DATABASE IF NOT EXISTS ClothingStore;
 USE ClothingStore;
 
@@ -12,9 +10,8 @@ DROP TABLE IF EXISTS tblClothes;
 DROP TABLE IF EXISTS tblUser;
 DROP TABLE IF EXISTS tblAdmin;
 
--- ====================================================
+
 -- tblAdmin
--- ====================================================
 CREATE TABLE tblAdmin (
     admin_id   INT AUTO_INCREMENT PRIMARY KEY,
     full_name  VARCHAR(100)  NOT NULL,
@@ -28,9 +25,8 @@ CREATE TABLE tblAdmin (
 INSERT INTO tblAdmin (full_name, email, username, password) VALUES
 ('Super Admin', 'admin@pasttime.co.za', 'admin', '$2y$10$exampleHashReplaceWithRealHash1234567890AbCdEfGhIj');
 
--- ====================================================
+
 -- tblUser
--- ====================================================
 CREATE TABLE tblUser (
     user_id    INT AUTO_INCREMENT PRIMARY KEY,
     full_name  VARCHAR(100)  NOT NULL,
@@ -42,7 +38,7 @@ CREATE TABLE tblUser (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Sample users (passwords hashed — run createTable.php to generate real hashes)
+-- Sample users 
 INSERT INTO tblUser (full_name, email, username, password, role, status) VALUES
 ('John Doe',    'john@example.com',   'johndoe',   '$2y$10$placeholder1', 'buyer',  'approved'),
 ('Jane Smith',  'jane@example.com',   'janesmith',  '$2y$10$placeholder2', 'buyer',  'approved'),
@@ -52,9 +48,8 @@ INSERT INTO tblUser (full_name, email, username, password, role, status) VALUES
 ('Amy Carter',  'amy@example.com',    'amycarter',  '$2y$10$placeholder6', 'buyer',  'pending'),
 ('Ben Nkosi',   'ben@example.com',    'bennkosi',   '$2y$10$placeholder7', 'seller', 'pending');
 
--- ====================================================
+
 -- tblClothes
--- ====================================================
 CREATE TABLE tblClothes (
     clothes_id  INT AUTO_INCREMENT PRIMARY KEY,
     item_name   VARCHAR(150)  NOT NULL,
@@ -85,9 +80,8 @@ INSERT INTO tblClothes (item_name, brand, category, size, item_condition, price,
 ('Winter Puffer Jacket',  'The Fix',   'Jackets',    'XL',  'Good',       799.00, 'Warm puffer jacket for cold days.',               'images/puffer jacket.jpg', 3, 'available'),
 ('Pleated Midi Skirt',    'Edgars',    'Bottoms',    'M',   'Like New',   310.00, 'Elegant pleated skirt, cream colour.',            'images/midi skirt.jpg', 5, 'available');
 
--- ====================================================
+
 -- tblAorder
--- ====================================================
 CREATE TABLE tblAorder (
     order_id    INT AUTO_INCREMENT PRIMARY KEY,
     user_id     INT NOT NULL,
